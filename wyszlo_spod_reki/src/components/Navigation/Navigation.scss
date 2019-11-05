@@ -1,0 +1,19 @@
+.navigation__bar{
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items:center;
+.navigation__elements {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+    list-style-type: none;
+  font-family: 'Megrim', cursive;
+  font-size: 1.5rem;
+  color: grey;
+
+}
+}
