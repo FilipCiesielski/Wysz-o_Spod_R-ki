@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import "./Navigation.scss"
 
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link} from 'react-scroll'
 
 const styleActive = {
     color: "ghostwhite",
