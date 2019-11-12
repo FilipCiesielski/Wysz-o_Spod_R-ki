@@ -12,13 +12,13 @@
     background-color: #EEEAEE;
     display: flex;
     align-items: center;
-    &:nth-of-type(1){
-      background-image: url("../../assets/Wyszło Spod Ręki.png");
+    &:nth-of-type(2){
+      background-image: url("../../assets/2618666.jpg");
       background-size: cover ;
       background-repeat: no-repeat;
     }
-    &:nth-of-type(2){
-      background-image: url("../../assets/2618666.jpg");
+    &:nth-of-type(1){
+      background-image: url("../../assets/miniPudełka.jpg");
       background-size: cover ;
       background-repeat: no-repeat;
     }

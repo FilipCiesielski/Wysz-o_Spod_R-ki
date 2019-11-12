@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import "./Navigation.scss"
-import {NavLink} from "react-router-dom"
+
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const styleActive = {
     color: "ghostwhite",
@@ -19,10 +20,11 @@ function Navigation() {
     return (
         <div className={"navigation__bar"} >
                 <ul className={"navigation__elements"}>
-                    <li>Home</li>
-                    <li>O mnie</li>
-                    <li>Galeria</li>
-                    <li>Kontakt</li>
+                    <li><Link activeClass="active"  to="MainLogo" spy={true} smooth={true} duration={500} >Home</Link></li>
+                    <li><Link activeClass="active"  to="About" spy={true} smooth={true} duration={500} >O mnie</Link></li>
+                    <li><Link activeClass="active"  to="PhotoGallery" spy={true} smooth={true} duration={500} >Galeria</Link></li>
+                    <li><Link activeClass="active"  to="Contact" spy={true} smooth={true} duration={500} >Kontakt</Link></li>
+
 
                 </ul>
 

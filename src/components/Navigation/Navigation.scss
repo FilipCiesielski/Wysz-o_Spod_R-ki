@@ -1,9 +1,10 @@
 .navigation__bar{
-  width: 100%;
-
+  width:100%;
   display: flex;
   justify-content: center;
   align-items:center;
+  position: fixed;
+
 .navigation__elements {
   display: flex;
   width: 60%;
@@ -14,6 +15,8 @@
   font-family: 'Megrim', cursive;
   font-size: 1.5rem;
   color: grey;
+
+
 
 }
 }

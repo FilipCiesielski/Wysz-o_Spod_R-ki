@@ -8,7 +8,7 @@ import {faUser,faAt,faEnvelopeOpenText} from "@fortawesome/free-solid-svg-icons"
 class Contact extends Component {
     render() {
         return (
-            <div className={"contact__box"}>
+            <div name={"Contact"} className={"contact__box"}>
                 <h1>Masz pytania? Napisz do mnie!</h1>
                 <div className={"contact__form"}>
                 <form>

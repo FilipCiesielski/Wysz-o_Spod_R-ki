@@ -6,6 +6,8 @@ import MainLogo from "../MainLogo/MainLogo";
 import WidgetProducts from "../WidgetProducts/WidgetProducts";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
+import PhotoGallery from "../PhotoGallery/PhotoGallery";
+
 
 class App extends Component{
   render() {
@@ -15,7 +17,9 @@ class App extends Component{
         <MainLogo/>
         <WidgetProducts/>
         <About/>
+            <PhotoGallery/>
         <Contact/>
+
         </div>
     )
   }

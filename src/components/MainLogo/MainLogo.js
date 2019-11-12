@@ -5,7 +5,7 @@ import "./MainLogo.scss"
 function MainLogo() {
 
     return (
-        <div className={"mainLogo__background"} >
+        <div name={"MainLogo"} className={"mainLogo__background"} >
 
         </div>
     )

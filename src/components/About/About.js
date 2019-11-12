@@ -7,7 +7,7 @@ import {faInstagram, faFacebookSquare} from '@fortawesome/fontawesome-free-brand
 class About extends Component {
     render() {
         return (
-            <div className={"about__box"}>
+            <div name="About" className={"about__box"}>
                 <div className={"about__text"}>
                     <h1>O mnie</h1>
                     <p>Kilka słów o zajawce. Lorem ipsum dolor sit amet mauris.
