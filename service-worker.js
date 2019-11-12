@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Wyszlo_Spod_Reki/precache-manifest.c6913b4690eafc52148266b7439583a6.js"
+  "/Wyszlo_Spod_Reki/precache-manifest.9ecccf92b481bc67988a170bb3738415.js"
 );
 
 self.addEventListener('message', (event) => {
