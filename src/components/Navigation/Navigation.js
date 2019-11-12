@@ -19,6 +19,7 @@ function Navigation() {
 
     return (
         <div className={"navigation__bar"} >
+            <div className={"navigation__menu"}>
                 <ul className={"navigation__elements"}>
                     <li><Link activeClass="active"  to="MainLogo" spy={true} smooth={true} duration={500} >Home</Link></li>
                     <li><Link activeClass="active"  to="About" spy={true} smooth={true} duration={500} >O mnie</Link></li>
@@ -27,7 +28,7 @@ function Navigation() {
 
 
                 </ul>
-
+            </div>
 
         </div>
     )

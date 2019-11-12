@@ -15,17 +15,17 @@ class Contact extends Component {
                     <label>
 
                         <FontAwesomeIcon className='font-awesome' icon={faUser}/>
-                        <input type={"name"} />
+                        <input type={"name"} placeholder={"imię"}/>
                     </label>
                     <label>
 
                         <FontAwesomeIcon className='font-awesome' icon={faAt}/>
-                        <input type={"email"} />
+                        <input type={"email"} placeholder={"e-mail"}/>
                     </label>
                     <label>
 
                         <FontAwesomeIcon className='font-awesome' icon={faEnvelopeOpenText}/>
-                        <textarea  />
+                        <textarea placeholder={"napisz do mnie"} />
                     </label>
                     <input type={"button"} value={"wyslij"}/>
                 </form>

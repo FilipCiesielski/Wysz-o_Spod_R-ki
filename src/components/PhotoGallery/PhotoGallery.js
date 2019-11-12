@@ -20,7 +20,7 @@ const PhotoGallery =()=> {
         };
 
                 return (
-                <div name={"PhotoGallery"}>
+                <div name={"PhotoGallery"} className={"photoGallery"}>
                     <Gallery photos={photos} onClick={openLightbox} />
                     <ModalGateway>
                         {viewerIsOpen ? (
