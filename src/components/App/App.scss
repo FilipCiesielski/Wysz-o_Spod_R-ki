@@ -1,11 +1,14 @@
+$mobile: "(max-width: 768px)";
+$tablet: "(min-width: 769px) and (max-width: 1200px)";
+$desktop: "(min-width: 1199px)";
+
 .app__container{
-  width: 70.625rem;
-
-  margin: 0 auto;
-box-sizing: border-box;
-
-
-
+  width: 75%;
 
 }
 
+@media #{$mobile} {
+  .app__container{
+    width: 100%;
+  }
+}

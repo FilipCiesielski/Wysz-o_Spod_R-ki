@@ -1,3 +1,8 @@
+$mobile: "(max-width: 768px)";
+$tablet: "(min-width: 769px) and (max-width: 1200px)";
+$desktop: "(min-width: 1199px)";
+
+
 .navigation__bar{
 
   height: 3rem;
@@ -70,3 +75,76 @@ z-index: 1;
 
 
 }}
+
+@media #{$mobile} {
+  .navigation__bar{
+
+    display: flex;
+
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+
+
+    .navigation__menu{
+      width:100%;
+
+      display: flex;
+
+      background-color:#EFEFEF;
+      z-index: 1;
+flex-wrap: wrap;
+
+
+      .navigation__elements {
+        cursor: pointer;
+        display: flex;
+        width: 61.5%;
+
+        align-items: center;
+     
+        list-style-type: none;
+        font-family: 'Megrim', cursive;
+        font-size: 1.4rem;
+        flex-wrap: wrap;
+
+
+        color: grey;
+        :hover{
+          -webkit-animation: shadow-drop-2-tb 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: shadow-drop-2-tb 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+
+
+      }@-webkit-keyframes shadow-drop-2-tb {
+         0% {
+           -webkit-transform: translateZ(0);
+           transform: translateZ(0);
+           -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+           box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+         }
+         100% {
+           -webkit-transform: translateZ(50px);
+           transform: translateZ(50px);
+           -webkit-box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35), 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+           box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35), 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+         }
+       }
+      @keyframes shadow-drop-2-tb {
+        0% {
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+          -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+        }
+        100% {
+          -webkit-transform: translateZ(50px);
+          transform: translateZ(50px);
+          -webkit-box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35), 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35), 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+        }}
+
+
+    }}
+
+}
