@@ -1,6 +1,5 @@
 import './App.scss';
 import React,{Component} from 'react';
-import {HashRouter,Switch,Route} from "react-router-dom";
 import Navigation from "../Navigation/Navigation";
 import MainLogo from "../MainLogo/MainLogo";
 import WidgetProducts from "../WidgetProducts/WidgetProducts";
@@ -15,12 +14,13 @@ class App extends Component{
         <div className={"app__container"}>
         <Navigation/>
         <MainLogo/>
+
         <WidgetProducts/>
         <About/>
             <PhotoGallery/>
         <Contact/>
-
         </div>
+
     )
   }
 

@@ -1,12 +1,33 @@
-.mainLogo__background{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 35rem;
-  background-image: url("../../assets/Wysz┼Вo Spod R─Щki.png");
-  background-size:cover;
-  background-repeat: no-repeat;
+$mobile: "(max-width: 768px)";
+$tablet: "(min-width: 769px) and (max-width: 1200px)";
+$desktop: "(min-width: 1199px)";
+
+
+@media #{$desktop} {
+  .mainLogo__background{
+
+    width: 100%;
+    height: 35rem;
+    background-image: url("../../assets/Wysz┼Вo Spod R─Щki.png");
+    background-size:cover;
+    background-repeat: no-repeat;
 
   }
+}
 
+@media #{$mobile} {
+
+  .mainLogo__background{
+
+    width: 100%;
+    height: 20rem;
+    background-image: url("../../assets/Wysz┼Вo Spod R─Щki.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 1rem;
+
+
+
+  }
+}

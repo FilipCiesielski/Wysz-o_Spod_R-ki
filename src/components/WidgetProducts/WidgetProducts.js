@@ -16,3 +16,4 @@ class WidgetProducts extends Component {
 
 
 export default WidgetProducts;
+

@@ -15,16 +15,21 @@ const styleNo = {
 
 }
 
-function Navigation() {
+class Navigation extends Component{
+
+render() {
 
     return (
-        <div className={"navigation__bar"} >
+        <div className={"navigation__bar"}>
             <div className={"navigation__menu"}>
                 <ul className={"navigation__elements"}>
-                    <li><Link activeClass="active"  to="MainLogo" spy={true} smooth={true} duration={500} >Home</Link></li>
-                    <li><Link activeClass="active"  to="About" spy={true} smooth={true} duration={500} >O mnie</Link></li>
-                    <li><Link activeClass="active"  to="PhotoGallery" spy={true} smooth={true} duration={500} >Galeria</Link></li>
-                    <li><Link activeClass="active"  to="Contact" spy={true} smooth={true} duration={500} >Kontakt</Link></li>
+                    <li><Link activeClass="active" to="MainLogo" spy={true} smooth={true} duration={500}>Home</Link>
+                    </li>
+                    <li><Link activeClass="active" to="About" spy={true} smooth={true} duration={500}>O mnie</Link></li>
+                    <li><Link activeClass="active" to="PhotoGallery" spy={true} smooth={true}
+                              duration={500}>Galeria</Link></li>
+                    <li><Link activeClass="active" to="Contact" spy={true} smooth={true} duration={500}>Kontakt</Link>
+                    </li>
 
 
                 </ul>
@@ -32,7 +37,7 @@ function Navigation() {
 
         </div>
     )
-}
+}}
 
 
 export default Navigation;
