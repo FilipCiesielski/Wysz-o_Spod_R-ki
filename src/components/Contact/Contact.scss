@@ -154,7 +154,7 @@ $desktop: "(min-width: 1199px)";
         width:100%;
 
         ::placeholder {
-          font-size: 1.3rem;
+          font-size: 1rem;
           color: #F8A5BF;
           text-align: center;
         }
@@ -163,14 +163,14 @@ $desktop: "(min-width: 1199px)";
           display: flex;
           align-items: center;
           font-size: 3rem;
-          width: 80%;
+          width: 100%;
           -webkit-appearance: none;
           -moz-appearance: none;
           appearance: none;
 
 
           .font-awesome {
-            width: 3rem;
+            width: 1.5rem;
             margin-left: 2rem;
             color: grey;
 
@@ -214,8 +214,8 @@ $desktop: "(min-width: 1199px)";
         input[type="button"] {
           font-family: 'Megrim', cursive;
           height: 3rem;
-          margin: 1rem 1rem 1rem 6rem;
-          width: 20%;
+          margin: 1rem 1rem 1rem 5rem;
+          width: 30%;
           font-size: 1.5rem;
           background-image: none;
           background-color: transparent;

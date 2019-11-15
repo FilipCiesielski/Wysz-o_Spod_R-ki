@@ -1,41 +1,55 @@
 import React, {Component} from 'react';
 import "./Navigation.scss"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 import { Link} from 'react-scroll'
+import {faBars} from "@fortawesome/free-solid-svg-icons";
 
-const styleActive = {
-    color: "ghostwhite",
-    textDecoration: "none",
-    fontSize: "1.5rem"
-}
-const styleNo = {
-    textDecoration: "none",
-    color: "#3498db",
-    fontSize: "1.5rem"
 
-}
 
 class Navigation extends Component{
+    state={
+        menuOff:"none",
+         };
 
+    handleOnClick=()=>{
+        if(this.state.menuOff==="none"){
+        this.setState({menuOff:"flex"})
+    }else{
+            this.setState({menuOff:"none"})
+        }}
 render() {
 
+
     return (
-        <div className={"navigation__bar"}>
-            <div className={"navigation__menu"}>
-                <ul className={"navigation__elements"}>
-                    <li><Link activeClass="active" to="MainLogo" spy={true} smooth={true} duration={500}>Home</Link>
-                    </li>
-                    <li><Link activeClass="active" to="About" spy={true} smooth={true} duration={500}>O mnie</Link></li>
-                    <li><Link activeClass="active" to="PhotoGallery" spy={true} smooth={true}
-                              duration={500}>Galeria</Link></li>
-                    <li><Link activeClass="active" to="Contact" spy={true} smooth={true} duration={500}>Kontakt</Link>
-                    </li>
+        <>
 
+            <div className={"navigation__mobileIcon"}> <FontAwesomeIcon className='font-awesome' icon={faBars} onClick={this.handleOnClick}/></div>
+            <div className={"navigation__elements"} >
 
-                </ul>
-            </div>
-
+                <Link activeClass="active" to="MainLogo" spy={true} smooth={true} duration={500}>Home</Link>
+                    <Link activeClass="active" to="About" spy={true} smooth={true} duration={500}>O mnie</Link>
+                    <Link activeClass="active" to="PhotoGallery" spy={true} smooth={true} duration={500}>Galeria</Link>
+                    <Link activeClass="active" to="Contact" spy={true} smooth={true} duration={500}>Kontakt</Link>
         </div>
+            <div className={"navigation__elements"} style={{display:this.state.menuOff}}>
+
+                <Link activeClass="active" to="MainLogo" spy={true} smooth={true} duration={500}>Home</Link>
+                <Link activeClass="active" to="About" spy={true} smooth={true} duration={500}>O mnie</Link>
+                <Link activeClass="active" to="PhotoGallery" spy={true} smooth={true} duration={500}>Galeria</Link>
+                <Link activeClass="active" to="Contact" spy={true} smooth={true} duration={500}>Kontakt</Link>
+            </div>
+            {/*<div className={"navigation__MobileElements"} style={{display:this.state.mobileView}}>*/}
+
+
+            {/*    <Link activeClass="active" to="MainLogo" spy={true} smooth={true} duration={500}>Home</Link>*/}
+            {/*    <Link activeClass="active" to="About" spy={true} smooth={true} duration={500}>O mnie</Link>*/}
+            {/*    <Link activeClass="active" to="PhotoGallery" spy={true} smooth={true} duration={500}>Galeria</Link>*/}
+            {/*    <Link activeClass="active" to="Contact" spy={true} smooth={true} duration={500}>Kontakt</Link>*/}
+            {/*</div>*/}
+
+</>
+
     )
 }}
 
