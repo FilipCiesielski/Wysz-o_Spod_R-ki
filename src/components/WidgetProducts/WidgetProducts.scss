@@ -2,7 +2,7 @@ $mobile: "(max-width: 768px)";
 $tablet: "(min-width: 769px) and (max-width: 1200px)";
 $desktop: "(min-width: 1199px)";
 
-@media   #{$desktop}{
+@media   #{$desktop,$tablet}{
   .widgetProducts__box {
     width: 100%;
     height: 25rem;

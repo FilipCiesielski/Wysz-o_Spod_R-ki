@@ -3,7 +3,7 @@ $tablet: "(min-width: 769px) and (max-width: 1200px)";
 $desktop: "(min-width: 1199px)";
 
 
-@media #{$desktop} {
+@media #{$desktop,$tablet} {
   .mainLogo__background{
 
     width: 100%;

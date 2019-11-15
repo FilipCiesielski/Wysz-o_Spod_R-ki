@@ -85,7 +85,7 @@ $desktop: "(min-width: 1199px)";
 }
 }
 
-@media #{$mobile} {
+@media #{$mobile,$tablet} {
 
   .about__box {
     display: flex;
@@ -111,7 +111,7 @@ $desktop: "(min-width: 1199px)";
         margin-bottom: 1rem;
         margin-top: 1rem;
         width: 100%;
-        padding: 1rem;
+        padding: 2rem;
         text-align: center;
         background-color: #F8A5BF;
         opacity: 0.5;

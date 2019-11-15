@@ -15,9 +15,10 @@ class Navigation extends Component{
     handleOnClick=()=>{
         if(this.state.menuOff==="none"){
         this.setState({menuOff:"flex"})
-    }else{
+
+        }else{
             this.setState({menuOff:"none"})
-        }}
+        }};
 render() {
 
 
@@ -32,21 +33,14 @@ render() {
                     <Link activeClass="active" to="PhotoGallery" spy={true} smooth={true} duration={500}>Galeria</Link>
                     <Link activeClass="active" to="Contact" spy={true} smooth={true} duration={500}>Kontakt</Link>
         </div>
-            <div className={"navigation__elements"} style={{display:this.state.menuOff}}>
+            <div className={"navigation__mobileElements"} style={{display:this.state.menuOff} }>
 
                 <Link activeClass="active" to="MainLogo" spy={true} smooth={true} duration={500}>Home</Link>
                 <Link activeClass="active" to="About" spy={true} smooth={true} duration={500}>O mnie</Link>
                 <Link activeClass="active" to="PhotoGallery" spy={true} smooth={true} duration={500}>Galeria</Link>
                 <Link activeClass="active" to="Contact" spy={true} smooth={true} duration={500}>Kontakt</Link>
             </div>
-            {/*<div className={"navigation__MobileElements"} style={{display:this.state.mobileView}}>*/}
 
-
-            {/*    <Link activeClass="active" to="MainLogo" spy={true} smooth={true} duration={500}>Home</Link>*/}
-            {/*    <Link activeClass="active" to="About" spy={true} smooth={true} duration={500}>O mnie</Link>*/}
-            {/*    <Link activeClass="active" to="PhotoGallery" spy={true} smooth={true} duration={500}>Galeria</Link>*/}
-            {/*    <Link activeClass="active" to="Contact" spy={true} smooth={true} duration={500}>Kontakt</Link>*/}
-            {/*</div>*/}
 
 </>
 
