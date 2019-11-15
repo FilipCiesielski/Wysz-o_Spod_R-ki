@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Wyszlo_Spod_Reki/static/css/main.02f90771.chunk.css",
+    "main.css": "/Wyszlo_Spod_Reki/static/css/main.2d27cc92.chunk.css",
     "main.js": "/Wyszlo_Spod_Reki/static/js/main.24ce95fb.chunk.js",
     "main.js.map": "/Wyszlo_Spod_Reki/static/js/main.24ce95fb.chunk.js.map",
     "runtime-main.js": "/Wyszlo_Spod_Reki/static/js/runtime-main.d61571f4.js",
@@ -8,9 +8,9 @@
     "static/js/2.43235ded.chunk.js": "/Wyszlo_Spod_Reki/static/js/2.43235ded.chunk.js",
     "static/js/2.43235ded.chunk.js.map": "/Wyszlo_Spod_Reki/static/js/2.43235ded.chunk.js.map",
     "index.html": "/Wyszlo_Spod_Reki/index.html",
-    "precache-manifest.755b31104746ad9b2848dacdd132fffa.js": "/Wyszlo_Spod_Reki/precache-manifest.755b31104746ad9b2848dacdd132fffa.js",
+    "precache-manifest.1cda5318afbb1047fc9c423d5f187486.js": "/Wyszlo_Spod_Reki/precache-manifest.1cda5318afbb1047fc9c423d5f187486.js",
     "service-worker.js": "/Wyszlo_Spod_Reki/service-worker.js",
-    "static/css/main.02f90771.chunk.css.map": "/Wyszlo_Spod_Reki/static/css/main.02f90771.chunk.css.map",
+    "static/css/main.2d27cc92.chunk.css.map": "/Wyszlo_Spod_Reki/static/css/main.2d27cc92.chunk.css.map",
     "static/media/WidgetProducts.scss": "/Wyszlo_Spod_Reki/static/media/miniPudełka-min.18596f8c.jpg",
     "static/media/Contact.scss": "/Wyszlo_Spod_Reki/static/media/634100-POB6T4-481-min.1b9111fc.jpg",
     "static/media/About.scss": "/Wyszlo_Spod_Reki/static/media/KasiaPopiołekColor.13836056.png",
